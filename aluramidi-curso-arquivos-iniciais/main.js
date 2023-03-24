@@ -6,20 +6,21 @@ function tocaSom(idElementoAudio) {
 const listaDeTeclas = document.querySelectorAll('.tecla');
 listaDeTeclas[0].onclick = tocaSom
 
-let contador = 0
+// nao necessario osar funcao se usado For ao inves de While (let contador = 0)
 
-while (contador < listaDeTeclas.length) {
+for (let contador =0;contador < listaDeTeclas.length; contador++) {
 
     const tecla = listaDeTeclas[contador]
 
     const instrumento = tecla.classList[1];
-    //template
+    //template string
     const idAudio = `#som_${instrumento}`;
 
     tecla.onclick = function () {
         tocaSom(idAudio)
     };
 
-    contador = contador + 1;
-    console.log(contador);
+    //nao mais utilizado -> contador = contador + 1; popis for ja atribui
+    //console.log(contador);
 }
+
