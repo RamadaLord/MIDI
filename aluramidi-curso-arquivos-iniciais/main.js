@@ -6,7 +6,7 @@ function tocaSom(idElementoAudio) {
 const listaDeTeclas = document.querySelectorAll('.tecla');
 listaDeTeclas[0].onclick = tocaSom
 
-// nao necessario osar funcao se usado For ao inves de While (let contador = 0)
+// nao necessario usar funcao se usado For ao inves de While (let contador = 0)
 
 for (let contador =0;contador < listaDeTeclas.length; contador++) {
 
