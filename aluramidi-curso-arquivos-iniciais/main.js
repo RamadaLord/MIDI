@@ -20,7 +20,15 @@ for (let contador =0;contador < listaDeTeclas.length; contador++) {
         tocaSom(idAudio)
     };
 
-    //nao mais utilizado -> contador = contador + 1; popis for ja atribui
+    tecla.onkeydown = function(){
+        tecla.classList.add('ativa');
+    }
+
+    tecla.onkeyup = function(){
+        tecla.classList.remove('ativa')
+    }
+
+    //nao mais utilizado -> contador = contador + 1; pois for ja atribui
     //console.log(contador);
 }
 
